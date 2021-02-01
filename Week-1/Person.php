@@ -25,9 +25,14 @@ class Person
     {
         echo "AHOY";
     }
+
+    function __destruct()
+    {
+        echo ('Destructed');
+    }
 }
 
 $cam = new Person('Hoang', 'Cam', 21);
 $cam->greet();
 Person::ahoy();
-echo(Person::CLASS_NAME);
+echo (Person::CLASS_NAME);
