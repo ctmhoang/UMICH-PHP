@@ -15,7 +15,6 @@ if (!isset($_SESSION['val'])) {
     echo "<p>Update to $_SESSION[val]</p>";
 } else {
     session_destroy();
-    session_start();
     echo '<p>Restarted</p>';
 }
 ?>
